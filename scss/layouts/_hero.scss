@@ -1,0 +1,191 @@
+@use "../utils/mixins" as *;
+
+.hero {
+    padding: 40px 20px 80px;
+    max-width: 1410px;
+    margin: 0 auto;
+
+    &__heading {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 130%;
+        color: var(--secondary-color);
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    &__sub--heading {
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 130%;
+        margin-bottom: 60px;
+        text-align: center;
+
+        @include tablet {
+            margin-bottom: 30px;
+            font-size: 40px;
+            padding: 0 20px;
+        }
+    }
+
+    &__article {
+        min-height: 578px;
+        .slick-prev,
+        .slick-next {
+            width: 55px;
+            height: 55px;
+            background: var(--secondary-color);
+            top: auto;
+            bottom: -27px;
+            right: 0;
+            left: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 20px;
+                background-image: url(../img/icons/arrow.svg);
+                background-repeat: no-repeat;
+            }
+
+            @include tablet {
+                bottom: auto;
+                top: 150px;
+                right: 20px;
+            }
+        }
+
+        .slick-prev {
+            right: 55px;
+            border-right: 1px solid #F59B65;
+            z-index: 1;
+
+            &::before {
+                transform:scaleX(-1);
+            }
+
+            @include tablet {
+                left: 20px;
+            }
+        }
+    }
+
+    &__article--item {
+        &.slick-slide {
+            display: flex;
+            height: 597px;
+
+            @include tablet {
+                height: auto;
+                flex-direction: column-reverse;
+            }
+        }
+    }
+
+    &__article--text {
+        flex-basis: 788px;
+        padding: 125px 117px 25px 105px;
+        background-color: var(--tetriary-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 16px;
+        line-height: 28px;
+        position: relative;
+
+        @include tablet {
+            padding: 60px 40px 25px;
+            flex-basis: auto;
+        }
+
+        @include mobile {
+            padding: 60px 25px 25px;
+        }
+        
+        p {
+            margin-bottom: 28px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 70px;
+            width: 30px;
+            height: 23px;
+            background-image: url(../img/icons/qoutes.svg);
+
+            @include tablet {
+                top: 20px;
+            }
+        }
+    }
+
+    &__article--author {
+        display: block;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 26px;
+        margin-top: 12px;
+    }
+
+    &__article--position {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    &__article--social {
+        display: inline-flex;
+        font-weight: 500;
+        color: var(--primary-color);
+        position: relative;
+
+        &::after {
+            content: "";
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--secondary-color);
+            transition: all ease 0.3s;
+        }
+
+        &:hover::after {
+            background-color: transparent;
+        }
+    }
+
+    &__article--img {
+        flex-basis: 582px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            object-position: center;
+
+            @include tablet {
+                height: 400px;
+            }
+
+            @include mobile {
+                height: 300px;
+            }
+        }
+
+        @include tablet {
+            flex-basis: 300px;
+        }
+
+        @include mobile {
+            flex-basis: auto;
+        }
+    }
+
+    @include tablet {
+        padding: 20px;
+    }
+}
