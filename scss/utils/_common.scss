@@ -13,12 +13,9 @@ a {
     transition: all ease 0.3s;
 }
 
-img {
-    width: 100%;
-}
-
 body {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     line-height: 150%;
+    color: var(--primary-color);
 }

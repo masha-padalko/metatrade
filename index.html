@@ -5,8 +5,8 @@
 		<title>MetaTrader App</title>
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body>
@@ -17,22 +17,27 @@
 		</header>
 		<main>
 			<div class="hero">
-				<a href="#">
-					<img class="hero__logo" src="img/mt_logo.svg" alt="MetaTrader logo" >
+				<a href="#" class="hero__logo">
+					<img src="img/mt_logo.svg" alt="MetaTrader logo" >
 				</a>
 				<div class="hero__text">
 					<h1 class="hero__title">
-						Trade Your MetaTrader Accounts in One App!
+						Trade Your<a href="#" class="hero__title-logo">
+							<img src="img/mt_logo.svg" alt="MetaTrader logo" >
+						</a>MetaTrader Accounts in One App!
 					</h1>
-					<a href="#">
-						<img class="hero__app-appstore" src="img/appstore.svg" alt="Appstore download button" >
-					</a>
-					<a href="#">
-						<img class="hero__app-google" src="img/google.svg" alt="GooglePlay download button">
-					</a>
+					<div class="hero__app">
+						<a href="#" class="hero__app-appstore">
+							<img src="img/appstore.svg" alt="Appstore download button" >
+						</a>
+						<a href="#" class="hero__app-google">
+							<img src="img/google.svg" alt="GooglePlay download button">
+						</a>
+					</div>
+				
 					<div class="hero__qr">
-						<img src="img/qr_code.svg" alt="qr code for app downloading">	
-						<p>Don't wait - download the App with MT4/MT5 included now!</p> 
+						<img src="img/qr_code.svg" class="hero__qr-code" alt="qr code for app downloading">	
+						<p class="hero__qr-text">Don't wait - download the App with MT4/MT5 included now!</p> 
 					</div>
 				</div>
 			</div>
