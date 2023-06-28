@@ -1,6 +1,40 @@
 @use "../utils/mixins" as *;
 
 .description {
+
+    position: relative;
+
+    @include tablet {
+        // display: flex;
+        // align-items: center;
+    }
+
+    &::after {
+        // content: "";
+        position: absolute;
+        bottom: 0;
+        right: -90px;
+        width: 320px;
+        height: 454px;
+        // background: url("../img/description_bg.svg") bottom right;
+    }
+
+    @include desktop {
+        display: flex;
+        align-items: center;
+        max-width: 1350px;
+        margin-inline: auto;
+        padding-left: 65px;
+        position: relative;
+        padding-bottom: 100px;
+
+        &::after {
+            width: 679px;
+            height: 640px;
+            right: 0;
+        } 
+    }
+
     &__img {
         max-width: 320px;
         margin-inline: auto;
@@ -9,6 +43,14 @@
         img {
             width: 100%;
         }
+
+        @include desktop {
+            margin: 0;
+            max-width: 525px;
+            width: 525px;
+            padding-left: 55px;
+            z-index: 1;
+        }
     }
 
     &__text {
@@ -16,9 +58,17 @@
         position: relative;
         overflow: hidden;
 
+        @include desktop {
+            overflow: visible;
+        }
+
         p {
             max-width: 320px;
             margin-inline: auto;
+
+            @include desktop {
+                max-width: 270px;
+            }
         }
 
         span {
@@ -40,6 +90,10 @@
             background: url("../img/desc_bg.svg") no-repeat center;
             background-size: contain;
             z-index: -1;
+
+            @include desktop {
+                width: 467px;
+            }
         }
     }
 
@@ -52,6 +106,13 @@
         flex-direction: column;
         align-items: center;
 
+        @include desktop {
+            max-width: 270px;
+            text-align: left;
+            align-self: flex-end;
+            align-items: flex-start;
+        }
+
         p {
             margin-bottom: 35px;
             margin-top: 40px;
@@ -60,6 +121,10 @@
 
     &__app {
         display: flex;
+
+        &:hover {
+            opacity: 0.8;
+        }
 
         &:not(:last-child) {
             margin-bottom: 13px;
