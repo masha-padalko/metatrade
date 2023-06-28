@@ -18,10 +18,14 @@
         overflow: hidden;
         align-items: center;
         justify-content: space-between;
+
+        @include tablet {
+            margin-right: 30px;
+        }
         
 
         @include desktop {
-            margin-right: 30px;
+
             &.slick-slide {
                 display: flex;
                 width: 770px;
@@ -90,9 +94,11 @@
 
 .slick-dots {
     bottom: auto;
+    top: -10px;
+    width: auto;
 
     @include desktop {
-        top: -10px;
+        
     }
 }
 
