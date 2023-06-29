@@ -15,6 +15,7 @@
 
 <h2>Tested on mobile device:</h2>
 <p>Iphone 12 PRO Max Safari browser</p>
+<p>Iphone 11 PRO Safari browser</p>
 
 <h2>What could be improve:</h2>
 <p>Add GULP task for prefixes</p>
