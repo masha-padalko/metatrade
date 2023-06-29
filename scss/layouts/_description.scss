@@ -3,20 +3,21 @@
 .description {
 
     position: relative;
-
-    @include tablet {
-        // display: flex;
-        // align-items: center;
-    }
+    overflow: hidden;
 
     &::after {
-        // content: "";
+        content: "";
         position: absolute;
         bottom: 0;
-        right: -90px;
-        width: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 454px;
         height: 454px;
-        // background: url("../img/description_bg.svg") bottom right;
+        background: url(../img/description_bg.svg) bottom right;
+        z-index: -1;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 0 20px;
     }
 
     @include desktop {
@@ -32,6 +33,9 @@
             width: 679px;
             height: 640px;
             right: 0;
+            left: auto;
+            transform: translateX(0);
+            background-position: 0 0;
         } 
     }
 

@@ -2,7 +2,7 @@ $(document).ready(function () {
   $(".carousel").slick({
     dots: true,
     arrows: false,
-    slidesToShow: 1, // Number of slides to show initially
+    slidesToShow: 1, 
     slidesToScroll: 1,
     mobileFirst:true,
     adaptiveHeight: true,
@@ -25,6 +25,5 @@ $(document).ready(function () {
       },
     ]
   });
-  
 });
 

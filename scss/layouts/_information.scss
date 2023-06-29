@@ -2,11 +2,9 @@
 
 .information {
     padding: 0 10px;
-    // width: 320px;
     margin-inline: auto;
 
     @include desktop {
-        // width: 770px;
         padding: 0;
         padding-top: 46px;
     }
@@ -22,10 +20,8 @@
         @include tablet {
             margin-right: 30px;
         }
-        
 
         @include desktop {
-
             &.slick-slide {
                 display: flex;
                 width: 770px;
@@ -81,7 +77,6 @@
             bottom: 0;
             width: 30px;
             border-radius:  0 15px 0 0;
-            
         }
 
         &::before {
