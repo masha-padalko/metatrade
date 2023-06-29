@@ -13,7 +13,7 @@
 <p>PNG images were compressed by <a href="https://compress-or-die.com/" target="_blank">Compress or die</a> service</p>
 <p>Checked on  <a href="https://validator.w3.org/" target="_blank">HTML validator</a> </p>
 
-<h2>Tested on mobile device:</h2>
+<h2>Tested on mobile devices:</h2>
 <p>Iphone 12 PRO Max Safari browser</p>
 <p>Iphone 11 PRO Safari browser</p>
 
