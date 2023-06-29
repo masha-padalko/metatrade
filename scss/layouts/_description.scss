@@ -28,6 +28,7 @@
         padding-left: 65px;
         position: relative;
         padding-bottom: 65px;
+        overflow: visible;
 
         &::after {
             width: 679px;
@@ -125,6 +126,7 @@
 
     &__app {
         display: flex;
+        align-self: center;
 
         &:hover {
             opacity: 0.6;
