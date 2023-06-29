@@ -7,10 +7,11 @@
 <p>https://nodejs.org/download/release/v14.18.0/</p>
 
 <h2>Comments:</h2>
-<p>Instead Futura PT (Adobe payment font) was used Jost Google font</p>
+<p>Instead Futura PT (Adobe payment font) was used similar Jost Google font</p>
 <p>Used slider  <a href="https://kenwheeler.github.io/slick/" target="_blank">Slick carousel</a></p>
 <p>All svg were compressed by <a href="https://jakearchibald.github.io/svgomg/" target="_blank">SVGOMG</a> service</p>
 <p>PNG images were compressed by <a href="https://compress-or-die.com/" target="_blank">Compress or die</a> service</p>
+<p>Checked on  <a href="https://validator.w3.org/" target="_blank">HTML validator</a> </p>
 
 <h2>Tested on mobile device:</h2>
 <p>Iphone 12 PRO Max Safari browser</p>
