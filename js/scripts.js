@@ -18,7 +18,7 @@ $(document).ready(function () {
       {
         breakpoint: 1500,
         settings: {
-          centerPadding: '408px',
+          centerPadding: '350px',
           centerMode: true,
           dots: true,
         }

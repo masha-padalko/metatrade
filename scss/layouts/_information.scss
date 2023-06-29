@@ -67,6 +67,10 @@
             margin: 0;
         }
 
+        img {
+            width: 100%;
+        }
+
         &::after,
         &::before { 
             content: "";
@@ -94,11 +98,23 @@
 
 .slick-dots {
     bottom: auto;
-    top: -10px;
+    top: -58px;
     width: auto;
+    left: 50%;
+    transform: translateX(-50%);
 
     @include desktop {
-        
+        top: -10px;
+    }
+}
+
+.slick-dots li {
+    height: 6px;
+    width: 6px;
+
+    &.slick-active {
+        height: 12px;
+        width: 12px;
     }
 }
 
@@ -114,6 +130,8 @@
     background-color: #EBE5DE;
     border-radius: 50%;
     opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .slick-dots li.slick-active button:before {
